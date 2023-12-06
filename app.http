@@ -1,0 +1,22 @@
+###
+GET http://localhost:3000/todos/
+
+###
+GET http://localhost:3000/todos/?status=TO%20DO
+
+###
+GET http://localhost:3000/todos/?priority=HIGH
+
+###
+POST http://localhost:3000/todos/
+content-type: application/json
+
+{
+  "id":10,
+  "todo": "theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+
+###
+DELETE http://localhost:3000/todos/3/
